@@ -62,11 +62,21 @@
 	{\end{changemargin}
 }	
 
+
 \newcommand{\school}[4]{
 	\textbf{#1} \hfill \emph{#2\\}
 	#3\\ 
 	#4\\
 }
+
+\newenvironment{BodyText} {
+  \raggedleft
+  \centering
+  %\begin{it}{}
+}
+{%\end{it} 
+}
+
 
 % END RESUME DEFINITIONS
 
@@ -74,7 +84,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Name
-\contact{George Lewis}{ghl227@nyu.edu}{(203) 918-4859}
+\contact{George H. Lewis}{ghl227@nyu.edu}{(203) 918-4859}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -114,11 +124,32 @@
 	\textbf{Graduate Research} \hfill \emph{Fall 2007 - Present}\\
 	New York University \\
         The European Organization for Nuclear Research (CERN) \\
+
 	\vspace*{-4pt}
+
 	\begin{itemize} \itemsep -0pt  % reduce space between items
 		\item Active member of the ATLAS collaboration.
                 \item Contributor to the ROOT/RooStats Project
 	\end{itemize}
+
+        \begin{quotation}
+          \raggedright
+          ATLAS is one of the multi-purpose experiments built to detect, analyze, and discover the products of 7-8 TeV proton-proton collisions at the Large Hadron Collider (LHC) at the European Organization for Nuclear Research (CERN) near Geneva, Switzerland.
+          The High Energy Physics group at New York University has played a leading role in data aquisition, processing, analysis, and statistical modeling.
+          The primary focus of our group since the startup on the LHC program has been precise measurements of the Top Quark and the discovery of the Higgs Boson.
+          In particular, we have been extremely successful at developing statistical tools and techniques that have become the primary means of making precise measurements, claiming discovery, and setting limits on proposed physical models. \\
+          \par
+          As an active member of both the ATLAS collaboration and the High Energy Physics group at NYU, I have worked in a wide variety of roles during my graduate carreer.
+          Between taking graduate courses at NYU in 2008 and 2009, I pioneered a data-driven technique for measuring a primary source of systematic uncertainty in Higgs boson searches.
+          In 2010, I became the primary developer for the Missing Transverse Energy trigger, which uses calorimeter energy to select interesting collission events that should be recorded to disk instead of being discarded.
+          Algorithms used to trigger the saving of events must be extremely fast, since collission occur at the LHC as often as every 25 ns, and must be reliable and robust to ensure a high data-taking efficiency.
+          In addition, I developed, wrote, and tested a new class of Missing Energy triggers, based on Missing Energy Significance, that provided a much higher signal-to-noise rejection for many important physical processes.
+          These triggers were approved of by ATLAS management and have been a component of data aquisition ever since.
+          
+
+        \end{quotation}
+        
+        \medskip
 
 	\textbf {Teaching Assistant} \hfill \emph{Fall 2007 - Fall 2008}\\
         New York University \\
@@ -128,6 +159,8 @@
 		%\item Quarks to the Cosmos
                 \item General Physics I
 	\end{itemize}
+
+        \medskip
 
 	\textbf {Undergraduate Research} \hfill \emph{Summer 2006}\\
         Los Alamos National Laboratory \\
