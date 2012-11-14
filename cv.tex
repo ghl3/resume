@@ -3,6 +3,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[usenames]{color}
+\usepackage{ragged2e}
 
 \leftmargin=0.25in
 \oddsidemargin=0.25in
@@ -90,7 +91,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Objective
 \header{Objective}
-
 \begin{body}
 	\vspace{14pt}
 	An exciting job requiring a unique computational, analytic, statistical, and technologic skill set.
@@ -133,19 +133,41 @@
 	\end{itemize}
 
         \begin{quotation}
-          \raggedright
+          \justifying
+          % \raggedright
+          % \raggedright
+          %\centering
+          %\parindent=1.5em % <- or whatever indent you want
+
           ATLAS is one of the multi-purpose experiments built to detect, analyze, and discover the products of 7-8 TeV proton-proton collisions at the Large Hadron Collider (LHC) at the European Organization for Nuclear Research (CERN) near Geneva, Switzerland.
           The High Energy Physics group at New York University has played a leading role in data aquisition, processing, analysis, and statistical modeling.
           The primary focus of our group since the startup on the LHC program has been precise measurements of the Top Quark and the discovery of the Higgs Boson.
-          In particular, we have been extremely successful at developing statistical tools and techniques that have become the primary means of making precise measurements, claiming discovery, and setting limits on proposed physical models. \\
-          \par
+          In particular, we have been extremely successful at developing statistical tools and techniques that have become the primary means of making precise measurements, claiming discovery, and setting limits on proposed physical models. 
+
+          \smallskip
+
           As an active member of both the ATLAS collaboration and the High Energy Physics group at NYU, I have worked in a wide variety of roles during my graduate carreer.
           Between taking graduate courses at NYU in 2008 and 2009, I pioneered a data-driven technique for measuring a primary source of systematic uncertainty in Higgs boson searches.
           In 2010, I became the primary developer for the Missing Transverse Energy trigger, which uses calorimeter energy to select interesting collission events that should be recorded to disk instead of being discarded.
           Algorithms used to trigger the saving of events must be extremely fast, since collission occur at the LHC as often as every 25 ns, and must be reliable and robust to ensure a high data-taking efficiency.
           In addition, I developed, wrote, and tested a new class of Missing Energy triggers, based on Missing Energy Significance, that provided a much higher signal-to-noise rejection for many important physical processes.
-          These triggers were approved of by ATLAS management and have been a component of data aquisition ever since.
-          
+          Since their development, these triggers have been running as a component of online data taking. 
+
+          \smallskip
+
+          My analysis has focused on performing precise measurements and and searching for new physics using events with top quarks in their final states.
+          Top quark physics is a fantastic environment for understanding the ATLAS detector, making precise measurements of the Standard Model, and searching for or constraining new physics models.
+          Much of my graduate work has been related to measuring the cross-section of top quark pair production.
+          In particular, I took on a leadership role in performing statistical combinations of individual cross-section measurements to provide accurate measurements that incorporated multiple physical channels.
+          In addition, I have performed searches for exotic physical models using final states that contain two top quarks of the same change.
+          These events have little background from the Standard Model, which makes them an ideal means of searching for new physical models.
+          My work in this analysis focused on quantifying the size of statistical and systematic uncertainties and incorporating those uncertainties in measured values. 
+
+          \smallskip
+
+          As a common thread across my various roles in the ATLAS collaboration, I have focused on developing statistical tools and techniques that have become widely used within the collaboration.
+          I am the primary developer of a statistical modeling package called ``HistFactory'' which facilitates the building of large probabilistic models and incorporating systematic uncertainties.
+          It is used by many analyses within ATLAS and even analysis by our sister experiment, CMS, including the analysis that lead to the discovery of the Higgs boson. 
 
         \end{quotation}
         
@@ -156,7 +178,7 @@
 	\vspace*{-4pt}
 	\begin{itemize} \itemsep -0pt
 		\item Graduate Quantum Mechanics I
-		%\item Quarks to the Cosmos
+		\item Quarks to the Cosmos
                 \item General Physics I
 	\end{itemize}
 
@@ -172,6 +194,8 @@
 
 % \newpage{} % uncomment this line if you want to force a new page
 
+\clearpage
+\newpage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Publications
@@ -179,23 +203,31 @@
 
 \begin{body}
   \vspace{14pt}
-  % http://inspirehep.net/record/1090422?ln=en
-  The ATLAS Collaboration. ``\textbf{Search for same-sign top-quark production and fourth-generation down-type quarks in pp collisions at $\sqrt{s}=7$ TeV with the ATLAS detector},'' in \emph{Journal of High Energy Physics (JHEP) 1204 (2012) 069}. 2012.\\
-  \medskip
+  \begin{itemize}
   % https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2012-130/
-  The ATLAS Collaboration. ``\textbf{Search for exotic same-sign dilepton signatures ($b'$ quark, $T5/3$ and four top quarks production) in 4.7 $fb^{-1}$ of pp collisions at $\sqrt{s}=7$ TeV with the ATLAS detector},'' in \emph{ATLAS-CONF-2012-130}. 2012.\\
-  \medskip
-  % https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2012-024/
-  The ATLAS Collaboration.  ``\textbf{Statistical combination of top quark pair production cross-section measurements using dilepton, single-lepton, and all-hadronic final states at $\sqrt{s}=7$ TeV with the ATLAS detector},'' in \emph{ATLAS-CONF-2012-024}. 2012. \\
-  \medskip
-  % https://cdsweb.cern.ch/record/1456844?ln=en
-  Kyle Cranmer, George Lewis, Lorenzo Moneta, Akira Shibata, Wouter Verkerke.  ``\textbf{HistFactory: A tool for creating statistical models for use with RooFit and RooStats}'' in \emph{CERN-OPEN-2012-016}. 2012. \\
-  \medskip
-  % https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2011-108/
-  The ATLAS Collaboration.  ``\textbf{Measurement of the top quark pair production cross-section based on a statistical combination of measurements of dilepton and single-lepton final states at $\sqrt{s}=7$ TeV with the ATLAS detector},'' in \emph{ATLAS-CONF-2011-108}. 2011. \\
-  \medskip
-  % http://inspirehep.net/record/924315
-  The ATLAS Collaboration. ``\textbf{Measurement of the top quark pair production cross section in pp collisions at $\sqrt{s}=7$ TeV in dilepton final states with ATLAS},'' in \emph{Phys Lett B707 (2012) 459-477}. 2010.\\
+  \item The ATLAS Collaboration. \textbf{Search for exotic same-sign dilepton signatures ($b'$ quark, $T5/3$ and four top quarks production) in 4.7 $fb^{-1}$ of pp collisions at $\sqrt{s}=7$ TeV with the ATLAS detector} \\
+    ATLAS-CONF-2012-130  \hfill \emph{Summer 2012} \\
+    \medskip
+    % https://cdsweb.cern.ch/record/1456844?ln=en
+  \item Kyle Cranmer, George Lewis, Lorenzo Moneta, Akira Shibata, Wouter Verkerke. \textbf{HistFactory: A tool for creating statistical models for use with RooFit and RooStats} \\
+    CERN-OPEN-2012-016 \hfill \emph{Spring 2012} \\
+    \medskip
+    % https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2012-024/
+  \item The ATLAS Collaboration.  \textbf{Statistical combination of top quark pair production cross-section measurements using dilepton, single-lepton, and all-hadronic final states at $\sqrt{s}=7$ TeV with the ATLAS detector} \\
+    ATLAS-CONF-2012-024 \hfill \emph{Spring 2012} \\
+    \medskip
+    % http://inspirehep.net/record/1090422?ln=en
+  \item The ATLAS Collaboration. \textbf{Search for same-sign top-quark production and fourth-generation down-type quarks in pp collisions at $\sqrt{s}=7$ TeV with the ATLAS detector} \\ 
+    Journal of High Energy Physics (JHEP) 1204 069 \hfill \emph{Winter 2011} \\
+    \medskip
+    % https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2011-108/
+  \item The ATLAS Collaboration.  \textbf{Measurement of the top quark pair production cross-section based on a statistical combination of measurements of dilepton and single-lepton final states at $\sqrt{s}=7$ TeV with the ATLAS detector} \\
+    ATLAS-CONF-2011-108 \hfill \emph{Summer 2011} \\
+    \medskip
+    % http://inspirehep.net/record/924315
+  \item The ATLAS Collaboration. \textbf{Measurement of the top quark pair production cross section in pp collisions at $\sqrt{s}=7$ TeV in dilepton final states with ATLAS} \\
+    Phys Lett B707 (2012) 459-477 \hfill \emph{Fall 2010} \\
+  \end{itemize}
 \end{body}
 
 \smallskip
@@ -205,16 +237,23 @@
 	\vspace{14pt}
         % Talks and Posters
         % http://indico.cern.ch/getFile.py/access?contribId=29&sessionId=6&resId=0&materialId=slides&confId=120126
-        ``\textbf{Missing ET signicance (XS) triggers in ATLAS}'' Level 1 Calorimeter Joint Meeting, Cambridge University, 2011. \\
+        \textbf{Missing ET signicance (XS) triggers in ATLAS} \\
+        Level 1 Calorimeter Joint Meeting, Cambridge University \hfill \emph{Spring 2011} \\
         \medskip
         % https://cdsweb.cern.ch/record/1336182/files/ATL-COM-PHYS-2011-292.pdf?
-        ``\textbf{New ATLAS Triggers Based on the Missing ET Significance}'' Large Hadron Collider Conference (LHCC), CERN, 2011. \\
-        % https://indico.cern.ch/conferenceDisplay.py?confId=35673
-        % https://indico.cern.ch/getFile.py/access?contribId=6&resId=0&materialId=slides&confId=35673
-        ``\textbf{Extracting Central Jet Veto Efficiency with Data}'' Higgs Working Group Meeting, CERN, 2008 \\
+        \textbf{New ATLAS Triggers Based on the Missing ET Significance} \\
+        Large Hadron Collider Conference (LHCC), CERN \hfill \emph{Spring 2011} \\
+        \medskip
         % https://indico.cern.ch/conferenceDisplay.py?confId=39694
         % https://indico.cern.ch/getFile.py/access?contribId=11&resId=0&materialId=slides&confId=39694
-        ``\textbf{Measuring Central Jets in EW and QCD Z+jets}'' Standard Model Plenary Session, CERN, 2008 \\
+        \textbf{Measuring Central Jets in EW and QCD Z+jets} \\
+        Standard Model Plenary Session, CERN \hfill  \emph{Fall 2008} \\
+        \medskip
+        % https://indico.cern.ch/conferenceDisplay.py?confId=35673
+        % https://indico.cern.ch/getFile.py/access?contribId=6&resId=0&materialId=slides&confId=35673
+        \textbf{Extracting Central Jet Veto Efficiency with Data} \\
+        Higgs Working Group Meeting, CERN, \hfill \emph{Summer 2008} \\
+
 \end{body}
 
 \smallskip
@@ -227,7 +266,10 @@
 
 \begin{body}
 	\vspace{14pt}
+        \emph{\textbf{General:}}{} Problem solving, data analysis and statistical modeling, programming, object-oriented design, data visualization, web design, working collaboratively, graduate level physics and advanced mathematics \\
+        \smallskip
 	\emph{\textbf{Programming:}}{} C++/C, Python, Numpy/Scipy, Javascript, HTML/CSS, \LaTeX, PHP, git/svn, bash \\
+        \smallskip
 	\emph{\textbf{High Energy Physics:}}{} ROOT, RooStats, Athena\\
 \end{body}
 
