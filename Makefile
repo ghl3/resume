@@ -6,23 +6,13 @@ DVIPS    = dvips
 BASENAME = cv
 PDFNAME = ${BASENAME}.pdf
 
-default: cv clean
+default: cv.pdf resume.pdf clean
 
-cv:
-	${PDFLATEX}  ${BASENAME}
+cv.pdf: cv.tex
+	${PDFLATEX}  cv
 
-%.dvi:	%.tex 
-	$(LATEX) $<
-
-%.bbl:	%.tex *.bib
-	$(LATEX) $*
-	$(BIBTEX) $*
-
-%.ps:	%.dvi
-	$(DVIPS) $< -o $@
-
-%.pdf:	%.tex
-	$(PDFLATEX) $<
+resume.pdf: resume.tex
+	${PDFLATEX} resume
 
 .PHONY: clean
 
