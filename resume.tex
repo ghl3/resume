@@ -1,0 +1,244 @@
+\documentclass[9pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+\usepackage{ragged2e}
+
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+\textheight=9.25in
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[4]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\ \smallskip
+			{#2}\\ \smallskip 
+			{#3}\\ \smallskip
+			{#4}\smallskip
+		\end{center}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\ 
+	#4\\
+}
+
+\newenvironment{BodyText} {
+  \raggedleft
+  \centering
+  %\begin{it}{}
+}
+{%\end{it} 
+}
+
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{George H. Lewis}{ghl227@nyu.edu}{(203) 918-4859}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Objective
+\header{Objective}
+\begin{body}
+	\vspace{14pt}
+	An exciting job in data science requiring a unique analytic, computational, statistical, and technologic skill set.
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Education}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Expected PhD in Experimental High Energy Particle Physics }{} \hfill \emph{Spring 2013}{} \\
+	\emph{New York University}, New York, NY{} \\
+  \medskip
+	\textbf{B.A. in Physics and Mathematics} \hfill \emph{Spring 2007} \\
+	\emph{Columbia University}, New York, NY\\
+\end{body}
+
+\smallskip
+
+
+\header{Skills}
+
+\begin{body}
+	\vspace{14pt}
+        \emph{\textbf{General:}}{} Analysis of large datasets, statistical modeling, bayesian and frequentist techniques, machine learning, data visualization, web design, object-oriented design, graduate level physics, advanced mathematics \\
+        \smallskip
+	\emph{\textbf{Programming:}}{} C, C++, Python, Numpy/Scipy, Javascript, HTML/CSS, \LaTeX, PHP, git/svn, bash \\
+        \smallskip
+	\emph{\textbf{High Energy Physics Tools:}}{} ROOT, RooFit, RooStats, HistFactory, Athena, PAthena and the grid \\
+\end{body}
+
+\smallskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+\header{Experience}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Graduate Research} \hfill \emph{Spring 2008 - Present}\\
+	New York University and The European Organization for Nuclear Research (CERN) \\
+        Thesis Advisor: Kyle Cranmer \\
+
+	\vspace*{-4pt}
+
+        \begin{itemize}
+        \item Member of the ATLAS Collaboration, and experiment working with the Large Hadron Collider (LHC)
+        \item Primary developer of statistical modeling and analysis software used extensively through our experiment
+        \item Studied theoretical physical models using same sign Top Quark pair events
+        \item Primary editor for the Top Quark Cross-Section Combination group
+        \item Primary code developer for the Missing Transverse Energy trigger
+        \item Recipient of National Science Foundation US LHC Graduate Student Support Award
+        \end{itemize}
+        \medskip
+
+	\textbf {Teaching Assistant} \hfill \emph{Fall 2007 - Fall 2008}\\
+        New York University \\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt
+		\item Graduate Quantum Mechanics I
+		\item Quarks to the Cosmos
+                \item General Physics I
+	\end{itemize}
+
+        \medskip
+
+	\textbf {Undergraduate Research} \hfill \emph{Summer 2006}\\
+        Los Alamos National Laboratory \\
+        Stanford Linear Accelerator (SLAC) \\
+
+        \begin{itemize}
+          \item Studied chemical/orbital structure of heavy metal elements (uranium, plutonium) using XANES x-ray technique
+          \item Aided in design and construction of experimental equipment
+          \item Performed and monitored data taking at the Stanford Linear Accelerator (SLAC) 
+        \end{itemize}
+
+\end{body}
+
+\smallskip
+
+
+\clearpage
+\newpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Publications
+\header{Selected Publications}
+
+\begin{body}
+  \vspace{14pt}
+  \begin{itemize}
+  % https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2012-130/
+  \item The ATLAS Collaboration. \textbf{Search for exotic same-sign dilepton signatures ($b'$ quark, $T5/3$ and four top quarks production) in 4.7 $fb^{-1}$ of pp collisions at $\sqrt{s}=7$ TeV with the ATLAS detector} \\
+    ATLAS-CONF-2012-130  \hfill \emph{Summer 2012} \\
+    \medskip
+    % https://cdsweb.cern.ch/record/1456844?ln=en
+  \item Kyle Cranmer, George Lewis, Lorenzo Moneta, Akira Shibata, Wouter Verkerke. \textbf{HistFactory: A tool for creating statistical models for use with RooFit and RooStats} \\
+    CERN-OPEN-2012-016 \hfill \emph{Spring 2012} \\
+    \medskip
+    % https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2012-024/
+  \item The ATLAS Collaboration.  \textbf{Statistical combination of top quark pair production cross-section measurements using dilepton, single-lepton, and all-hadronic final states at $\sqrt{s}=7$ TeV with the ATLAS detector} \\
+    ATLAS-CONF-2012-024 \hfill \emph{Spring 2012} \\
+    \medskip
+    % http://inspirehep.net/record/1090422?ln=en
+  \item The ATLAS Collaboration. \textbf{Search for same-sign top-quark production and fourth-generation down-type quarks in pp collisions at $\sqrt{s}=7$ TeV with the ATLAS detector} \\ 
+    JHEP 1204 (2012) 069 \hfill \emph{Winter 2011} \\
+    \medskip
+    % https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2011-108/
+  \item The ATLAS Collaboration.  \textbf{Measurement of the top quark pair production cross-section based on a statistical combination of measurements of dilepton and single-lepton final states at $\sqrt{s}=7$ TeV with the ATLAS detector} \\
+    ATLAS-CONF-2011-108 \hfill \emph{Summer 2011} \\
+    \medskip
+    %http://inspirehep.net/record/880002
+    \item The ATLAS Collaboration. \textbf{Measurement of the top quark-pair production cross section with ATLAS in pp collisions at $\sqrt{s}=7$ TeV} \\
+      EPJC 71 (2011) 1577 \hfill \emph{Fall 2010} \\
+  \end{itemize}
+\end{body}
+
+\smallskip
+
+\header{Selected Talks and Posters}
+\begin{body}
+	\vspace{14pt}
+        % Talks and Posters
+        % http://indico.cern.ch/getFile.py/access?contribId=29&sessionId=6&resId=0&materialId=slides&confId=120126
+        \textbf{Missing ET Significance (XS) Triggers in ATLAS} \\
+        Level 1 Calorimeter Joint Meeting, Cambridge University \hfill \emph{Spring 2011} \\
+        \medskip
+        % https://cdsweb.cern.ch/record/1336182/files/ATL-COM-PHYS-2011-292.pdf?
+        \textbf{New ATLAS Triggers Based on the Missing ET Significance} \\
+        Large Hadron Collider Conference (LHCC), CERN \hfill \emph{Spring 2011} \\
+        \medskip
+        % https://indico.cern.ch/conferenceDisplay.py?confId=39694
+        % https://indico.cern.ch/getFile.py/access?contribId=11&resId=0&materialId=slides&confId=39694
+        \textbf{Measuring Central Jets in EW and QCD Z+jets} \\
+        Standard Model Plenary Session, CERN \hfill  \emph{Fall 2008} \\
+        \medskip
+        % https://indico.cern.ch/conferenceDisplay.py?confId=35673
+        % https://indico.cern.ch/getFile.py/access?contribId=6&resId=0&materialId=slides&confId=35673
+        \textbf{Extracting Central Jet Veto Efficiency with Data} \\
+        Higgs Working Group Meeting, CERN \hfill \emph{Summer 2008} \\
+
+\end{body}
+
+
+\end{document}
