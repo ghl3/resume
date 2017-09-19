@@ -31,43 +31,43 @@
 }
 
 \newcommand{\lineover}{
-	\begin{changemargin}{-0.05in}{-0.05in}
-		\vspace*{-8pt}
-		\hrulefill \\
-		\vspace*{-2pt}
-	\end{changemargin}
+  \begin{changemargin}{-0.05in}{-0.05in}
+    \vspace*{-8pt}
+    \hrulefill \\
+    \vspace*{-2pt}
+  \end{changemargin}
 }
 
 \newcommand{\header}[1]{
-	\begin{changemargin}{-0.5in}{-0.5in}
-		\scshape{#1}\\
-  	\lineover
-	\end{changemargin}
+  \begin{changemargin}{-0.5in}{-0.5in}
+    \scshape{#1}\\
+    \lineover
+  \end{changemargin}
 }
 
 \newcommand{\contact}[4]{
-	\begin{changemargin}{-0.5in}{-0.5in}
-		\begin{center}
-			{\Large \scshape {#1}}\\ \smallskip
-			{#2}\\ \smallskip 
-			{#3}\\ \smallskip
-			{#4}\smallskip
-		\end{center}
-	\end{changemargin}
+  \begin{changemargin}{-0.5in}{-0.5in}
+    \begin{center}
+      {\Large \scshape {#1}}\\ \smallskip
+      {#2}\\ \smallskip
+      {#3}\\ \smallskip
+      {#4}\smallskip
+    \end{center}
+  \end{changemargin}
 }
 
 \newenvironment{body} {
-	\vspace*{-16pt}
-	\begin{changemargin}{-0.25in}{-0.5in}
-  }	
-	{\end{changemargin}
-}	
+  \vspace*{-16pt}
+\begin{changemargin}{-0.25in}{-0.5in}
+  }
+{\end{changemargin}
+}
 
 
 \newcommand{\school}[4]{
-	\textbf{#1} \hfill \emph{#2\\}
-	#3\\ 
-	#4\\
+  \textbf{#1} \hfill \emph{#2\\}
+  #3\\
+  #4\\
 }
 
 \newenvironment{BodyText} {
@@ -75,7 +75,7 @@
   \centering
   %\begin{it}{}
 }
-{%\end{it} 
+{%\end{it}
 }
 
 
@@ -85,8 +85,15 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Name
-\contact{George H. Lewis}{ghl227@nyu.edu}{(203) 918-4859}
+\contact{George Lewis}
+        {ghl227@gmail.com}
+        {(203) 918-4859}
 \smallskip
+
+\begin{body}
+  \vspace{14pt}
+  \emph{\textbf{Summary:}}{} Data Scientist and Data Engineer with a passion for building data products, accurate and effective statistical models, data pipelines, and tools to facilitate valid and repeatable data analyses
+\end{body}
 
 \smallskip
 
@@ -94,12 +101,10 @@
 % Skills
 \header{Skills}
 \begin{body}
-	\vspace{14pt}
-	\emph{\textbf{Languages:}}{} C/C++, Python, Javascript, PHP \\
-        \smallskip
-        \emph{\textbf{Tools:}}{} SQL, MongoDB, Numpy/Scipy, HTML/CSS, jQuery, Flask, d3, git/svn, bash, \LaTeX{}, ROOT \\
-        \smallskip
-        \emph{\textbf{General:}}{} Analysis of large datasets, statistical modeling, Bayesian and frequentist inference, machine learning, data visualization, web design and development, object-oriented design, graduate-level physics, advanced mathematics \\
+  \vspace{14pt}
+  \emph{\textbf{Languages:}}{} Python, Java, SQL, Scala, Clojure.  Limited experience with R.  Past experience with C and C++ \\
+  \smallskip
+  \emph{\textbf{Tools:}}{} Scikit-Learn, Pandas, Scipy, Jupyter, Postgres, Redshift, BigQuery, Spark, Airflow, AWS, Weka, XGBoost, matplotlib, seaborn, Flask, Play, Ring.  Limited experience with Tensorflow, Theano, tidyverse  \\
 \end{body}
 
 \smallskip
@@ -109,49 +114,45 @@
 \header{Experience}
 
 \begin{body}
-	\vspace{14pt}
-	\textbf{Fellowship} \hfill \emph{2013}\\
-        Insight Data Science
-        \begin{itemize}
-        \item Created a web app using Flask, Twitter Bootstrap, and jQuery that implements a Markov chain recommendation algorithm to suggest nearby and similar bars \\
-        \item Used Python libraries to implement a similarity ranking based on latent semantic analysis \\
-        \item Built a probabilistic model combining semantic similarity, distance, and user reviews to recommend nearby venues \\
-        \item Scraped online magazine reviews from NYMag.com and combined with location and user information from Foursquare API using Python \\
-        \item Deployed site to Heroku, using MongoDB to store data and Amazon S3 to host the trained algorithm \\
 
+  \vspace{14pt}
+
+  \textbf{LendUp} \hfill \emph{2013 - 2017}\\
+  Head of Risk and Analytics \\
+  Principal Data Scientist
+  \begin{itemize}
+
+    \item Founded the Risk and Analytics team, which later became the Data Science team.  Designed and implemented the risk and underwriting program, growing the company's loan portfolio by a factor of X while decreasing loss rates over YY basis points.  Led the team from seed round funding through series B. \\
+
+    \item Designed, trained, deployed, and monitored statistical models using logistic regression, generalized additive models, decision trees, and random forests to evaluate the credit risk of all applicants and to identify and mitigate fraud. \\
+
+    \item Grew the team from 1 to XX, establishing best practices for statistical analysis, techniques and tools for monitoring and real-time analytics.  Enforced high software standards and helped to develop a culture of strong programming practices within the data science team \\
+
+    \item Built production-quality software in Java to implement our risk program, to pull and parse data into features in real time, to score our statistical models, and to take action as a result of the risk decision, sending the customer to the desired next step in our flow \\
+
+    \item Recruited and trained the original data engineering team.  Worked with data engineering to build ETL processes for analytics, frameworks for running jobs using Airflow and Spark, pipelines for feature extraction, and tooling to enable streamlined model deployment for data scientists \\
         \end{itemize}
 
         \medskip
 
-	\textbf{Graduate Research} \hfill \emph{2008 - 2013}\\
-	New York University and The European Organization for Nuclear Research (CERN) \\
+        \textbf{Graduate Research} \hfill \emph{2008 - 2013}\\
+        New York University and The European Organization for Nuclear Research (CERN) \\
         Member of the ATLAS experiment at the Large Hadron Collider (LHC) \\
 
         \medskip
 
         \begin{itemize}
+
         \item Developed statistical modeling and analysis software used extensively throughout a 3000 person experiment
-        \item Used a parallel analysis architecture to analyze petabytes of data distributed over a worldwide grid of data centers
-        \item Designed and implemented statistical techniques to combine physical measurements made independently by several analysis groups to decrease overall uncertainty
-        \item Used profile likelihood ratio to evaluate frequentist confidence intervals and compared those to Bayesian credible intervals using Markov chain Monte-Carlo
-        \item Wrote highly optimized C++ code to classify which of millions of collisions per second to permanently store for later analysis
-%        \item Wrote C++/python code to analyze rare top-quark events that are used to constrain theoretical models
+
+        \item Used massively parallel batch computing to analyze petabytes of data distributed over a worldwide grid of data centers
+
+        \item Designed and implemented novel statistical modeling techniques to perform state-of-the-art inference, producing
+
         \item Enforced coding standards, conventions, and best practices across a large C++ and Python code base
+
         \item Recipient of National Science Foundation US LHC Graduate Student Support Award
-        \item Taught Quantum Mechanics (graduate), Quarks to the Cosmos, and General Physics (undergraduate)
 
-        \end{itemize}
-
-        \medskip
-
-	\textbf {Undergraduate Research} \hfill \emph{2006}\\
-        Los Alamos National Laboratory \\
-        Stanford Linear Accelerator (SLAC) \\
-
-        \begin{itemize}
-          \item Used x-rays to study the chemical and orbital structure of heavy metal elements (uranium, plutonium)
-          \item Aided in design and construction of experimental equipment
-          \item Performed and monitored data collection at SLAC 
         \end{itemize}
 
 \end{body}
@@ -163,12 +164,12 @@
 \header{Education}
 
 \begin{body}
-	\vspace{14pt}
-	\textbf{PhD in Experimental High Energy Particle Physics }{} \hfill \emph{2013}{} \\
-	\emph{New York University}, New York, NY{} \\
+  \vspace{14pt}
+  \textbf{PhD in Experimental High Energy Particle Physics }{} \hfill \emph{2013}{} \\
+  \emph{New York University}, New York, NY{} \\
   \medskip
-	\textbf{B.A. in Physics and Mathematics} \hfill \emph{2007} \\
-	\emph{Columbia University}, New York, NY\\
+  \textbf{B.A. in Physics and Mathematics} \hfill \emph{2007} \\
+  \emph{Columbia University}, New York, NY\\
 \end{body}
 
 \end{document}
