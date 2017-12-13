@@ -4,6 +4,8 @@
 \usepackage{amssymb}
 \usepackage[usenames]{color}
 \usepackage{ragged2e}
+\usepackage{hyperref}
+
 
 \leftmargin=0.25in
 \oddsidemargin=0.25in
@@ -13,7 +15,8 @@
 
 \raggedright
 
-\pagenumbering{arabic}
+ %m\pagenumbering{arabic}
+\pagestyle{empty}
 
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
 % DEFINITIONS FOR RESUME
@@ -88,11 +91,12 @@
 \contact{George Lewis}
         {ghl227@gmail.com}
         {(203) 918-4859}
+        {\url{https://spontaneoussymmetry.com}}
 \smallskip
 
 \begin{body}
   \vspace{14pt}
-  \emph{\textbf{Summary:}}{} Data Scientist and Data Engineer with a passion for building data products, accurate and effective statistical models, data pipelines, and tools to facilitate valid and repeatable data analyses
+  \emph{\textbf{Summary:}}{} Data science and data engineering leader with a history and passion for developing data products, training accurate and effective statistical models, assembling data pipelines, and building tools to facilitate valid and repeatable data analyses.
 \end{body}
 
 \smallskip
@@ -102,9 +106,9 @@
 \header{Skills}
 \begin{body}
   \vspace{14pt}
-  \emph{\textbf{Languages:}}{} Python, Java, SQL, Scala, Clojure.  Limited experience with R.  Past experience with C and C++ \\
+  \emph{\textbf{Languages:}}{} Python, Java, SQL, Scala, Clojure.  Limited experience with R.  Past experience with C and C++. \\
   \smallskip
-  \emph{\textbf{Tools:}}{} Scikit-Learn, Pandas, Scipy, Jupyter, Postgres, Redshift, BigQuery, Spark, Airflow, AWS, Weka, XGBoost, matplotlib, seaborn, Flask, Play, Ring.  Limited experience with Tensorflow, Theano, tidyverse  \\
+  \emph{\textbf{Tools:}}{} Scikit-Learn, Pandas, Scipy, Jupyter, Postgres, Redshift, BigQuery, Spark, Airflow, AWS, Weka, XGBoost, matplotlib, seaborn, Flask, Play, Ring.  Limited experience with Tensorflow, Theano, tidyverse.  \\
 \end{body}
 
 \smallskip
@@ -122,16 +126,16 @@
   Principal Data Scientist
   \begin{itemize}
 
-    \item Founded the Risk and Analytics team, which later became the Data Science team.  Designed and implemented the risk and underwriting program, growing the company's loan portfolio by a factor of X while decreasing loss rates over YY basis points.  Led the team from seed round funding through series B. \\
+    \item Founded the Risk and Analytics Team, which later became the Data Science Team.  Designed and implemented the risk and underwriting program, growing the company's loan portfolio by a factor of X while decreasing loss rates over YY basis points.  Led the team from seed round funding through series B. \\
 
     \item Designed, trained, deployed, and monitored statistical models using logistic regression, generalized additive models, decision trees, and random forests to evaluate the credit risk of all applicants and to identify and mitigate fraud. \\
 
-    \item Grew the team from 1 to XX, establishing best practices for statistical analysis, techniques and tools for monitoring and real-time analytics.  Enforced high software standards and helped to develop a culture of strong programming practices within the data science team \\
+    \item Grew the Data Science Team from 1 to 11, establishing best practices for building statistical models and developing techniques and tools for analytics and monitoring.  Enforced high software standards and helped to develop a culture of strong programming practices within the Data Science Team. \\
 
-    \item Built production-quality software in Java to implement our risk program, to pull and parse data into features in real time, to score our statistical models, and to take action as a result of the risk decision, sending the customer to the desired next step in our flow \\
+    \item Built production-quality software in Java and Clojure to implement our risk program, to pull and parse data into features in real time, to score our statistical models, and to take action as a result of our underwriting policy. \\
 
-    \item Recruited and trained the original data engineering team.  Worked with data engineering to build ETL processes for analytics, frameworks for running jobs using Airflow and Spark, pipelines for feature extraction, and tooling to enable streamlined model deployment for data scientists \\
-        \end{itemize}
+    \item Recruited and trained the original Data Engineering Team.  Worked with Data Engineering to build an ETL framework and numerous jobs and pipelines for analytics and feature extraction using python, Scala, Airflow and Spark.  Developed tooling to enable streamlined model deployment for data scientists. \\
+  \end{itemize}
 
         \medskip
 
@@ -143,15 +147,15 @@
 
         \begin{itemize}
 
-        \item Developed statistical modeling and analysis software used extensively throughout a 3000 person experiment
+        \item Developed statistical modeling and analysis software used extensively throughout a 3000 person experiment.
 
-        \item Used massively parallel batch computing to analyze petabytes of data distributed over a worldwide grid of data centers
+        \item Used massively parallel batch computing to analyze petabytes of data distributed over a worldwide grid of data centers.
 
-        \item Designed and implemented novel statistical modeling techniques to perform state-of-the-art inference, producing
+        \item Designed and implemented novel statistical modeling techniques to perform state-of-the-art inference, producing world accurate measurements.
 
-        \item Enforced coding standards, conventions, and best practices across a large C++ and Python code base
+        \item Enforced coding standards, conventions, and best practices across a large C++ and Python code base.
 
-        \item Recipient of National Science Foundation US LHC Graduate Student Support Award
+        \item Recipient of National Science Foundation US LHC Graduate Student Support Award.
 
         \end{itemize}
 
@@ -165,11 +169,20 @@
 
 \begin{body}
   \vspace{14pt}
-  \textbf{PhD in Experimental High Energy Particle Physics }{} \hfill \emph{2013}{} \\
+  \textbf{Ph.D. in Experimental High Energy Particle Physics }{} \hfill \emph{2013}{} \\
   \emph{New York University}, New York, NY{} \\
   \medskip
   \textbf{B.A. in Physics and Mathematics} \hfill \emph{2007} \\
   \emph{Columbia University}, New York, NY\\
+\end{body}
+
+
+% Education
+\header{Portfolio}
+
+\begin{body}
+  \vspace{14pt}
+  For a sample portfolio of work, please see: {\url{https://spontaneoussymmetry.com/work}}
 \end{body}
 
 \end{document}
